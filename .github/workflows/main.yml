@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - uses: actions/checkout@v4
+      - uses: meher-liatrio/checkout@v4
       - id: foo
-        uses: hello-world-comosite-action@v2
+        uses: meher-liatrio/hello-world-comosite-action@v2
         with:
           who-to-greet: 'Mona the Octocat'
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
