@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - uses: meher-liatrio/checkout@v4
+      - uses: actions/checkout@v4
       - id: foo
         uses: meher-liatrio/hello-world-composite-action@v2
         with:
